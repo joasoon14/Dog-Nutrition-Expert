@@ -507,3 +507,16 @@ footer p {
         max-width: 240px;
     }
 }
+/* Homepage portrait image */
+
+.home-hero-image {
+    max-width: 760px;
+}
+
+.home-hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    object-position: center;
+}
