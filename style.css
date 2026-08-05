@@ -471,7 +471,8 @@ footer p {
 
 .hero-image {
     max-width: 1050px;
-    margin: 0 auto 45px;
+    margin: 45px auto;
+    padding: 0 28px;
 }
 
 .hero-image img {
