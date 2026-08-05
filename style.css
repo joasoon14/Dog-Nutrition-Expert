@@ -378,6 +378,11 @@ color: #666666;
 font-size: 14px;
 line-height: 1.6;
 }
+nav a[aria-current="page"] {
+    color: #966378;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
 
 /* Mobile */
 
