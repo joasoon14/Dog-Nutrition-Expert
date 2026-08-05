@@ -1,1 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf9f7;
+    color: #252525;
+}
 
+header {
+    padding: 28px 40px;
+    background: white;
+    border-bottom: 1px solid #e4e1dc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 6px 0 0;
+    color: #666;
+}
+
+.hero {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.credentials {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #705c4f;
+}
+
+.hero h2 {
+    margin: 0 0 20px;
+    font-size: 46px;
+    line-height: 1.15;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #e4e1dc;
+    color: #666;
+}
