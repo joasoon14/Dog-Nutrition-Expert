@@ -1,53 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #faf9f7;
-    color: #252525;
+    color: #242424;
 }
 
-header {
-    padding: 28px 40px;
-    background: white;
-    border-bottom: 1px solid #e4e1dc;
+a {
+    color: inherit;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 30px;
+/* Header */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e7e3de;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-header p {
-    margin: 6px 0 0;
-    color: #666;
+.header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: #444444;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #966378;
+}
+
+/* Hero */
 
 .hero {
+    padding: 110px 28px 90px;
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fb 0%,
+            #f7eef2 50%,
+            #f4f0eb 100%
+        );
+}
+
+.hero-content {
     max-width: 850px;
-    margin: 80px auto;
-    padding: 50px 30px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.credentials {
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #705c4f;
+.eyebrow,
+.small-heading {
+    margin: 0 0 14px;
+    color: #966378;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-.hero h2 {
-    margin: 0 0 20px;
-    font-size: 46px;
-    line-height: 1.15;
+.hero h1 {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2px;
 }
 
-.hero p {
-    font-size: 19px;
+.hero-text {
+    max-width: 680px;
+    margin: 26px auto 0;
+    color: #555555;
+    font-size: 20px;
     line-height: 1.7;
 }
 
-footer {
-    padding: 25px;
+.hero-buttons {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 23px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button.primary {
+    background: #966378;
+    color: #ffffff;
+}
+
+.button.primary:hover {
+    background: #7f5265;
+}
+
+.button.secondary {
+    background: #ffffff;
+    border: 1px solid #d8ccd1;
+    color: #553d47;
+}
+
+.button.secondary:hover {
+    background: #fff8fb;
+}
+
+/* About */
+
+.credentials {
+    padding: 75px 28px;
+}
+
+.credentials-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 48px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(40, 30, 34, 0.07);
+}
+
+.credentials-card h2 {
+    margin: 0 0 22px;
+    font-size: 36px;
+}
+
+.credentials-card p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Services */
+
+.services {
+    padding: 70px 28px 90px;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 38px;
     text-align: center;
-    border-top: 1px solid #e4e1dc;
-    color: #666;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.service-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #eee8e3;
+    border-radius: 20px;
+}
+
+.service-card h3 {
+    margin: 0 0 14px;
+    color: #7f5265;
+    font-size: 23px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #5c5c5c;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Contact */
+
+.contact-section {
+    padding: 30px 28px 90px;
+}
+
+.contact-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 48px;
+    background: #f3e7ec;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.contact-card h2 {
+    margin: 0 0 16px;
+    font-size: 36px;
+}
+
+.contact-card p {
+    margin-bottom: 0;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+    padding: 28px;
+    background: #ffffff;
+    border-top: 1px solid #e7e3de;
+    color: #666666;
+    text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start;
+        gap: 14px;
+    }
+
+    .hero {
+        padding-top: 75px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credentials-card,
+    .contact-card {
+        padding: 32px 24px;
+    }
 }
