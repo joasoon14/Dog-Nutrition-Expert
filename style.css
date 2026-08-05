@@ -276,3 +276,121 @@ footer {
         padding: 32px 24px;
     }
 }
+/* Two target audiences */
+
+.audiences {
+padding: 75px 28px;
+}
+
+.audience-grid {
+max-width: 1180px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 28px;
+}
+
+.audience-card {
+padding: 42px;
+background: #ffffff;
+border: 1px solid #eee8e3;
+border-radius: 24px;
+box-shadow: 0 12px 35px rgba(40, 30, 34, 0.06);
+}
+
+.audience-card h2 {
+margin: 0 0 18px;
+font-size: 32px;
+}
+
+.audience-card p,
+.audience-card li {
+color: #555555;
+font-size: 17px;
+line-height: 1.7;
+}
+
+.audience-card ul {
+margin: 24px 0;
+padding-left: 22px;
+}
+
+.audience-card li {
+margin-bottom: 9px;
+}
+
+.text-link {
+color: #7f5265;
+font-weight: 700;
+text-decoration: none;
+}
+
+.text-link:hover {
+text-decoration: underline;
+}
+
+/* Specialist focus */
+
+.specialist-focus {
+padding: 70px 28px;
+background: #ffffff;
+text-align: center;
+}
+
+.focus-list {
+max-width: 950px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.focus-list span {
+padding: 11px 18px;
+background: #f3e7ec;
+border-radius: 999px;
+color: #684452;
+font-weight: 700;
+}
+
+.focus-description {
+max-width: 760px;
+margin: 30px auto 0;
+color: #555555;
+font-size: 18px;
+line-height: 1.75;
+}
+
+/* Disclaimer */
+
+.disclaimer {
+max-width: 850px;
+margin: 0 auto;
+padding: 0 28px 70px;
+}
+
+.disclaimer p {
+padding: 20px;
+border-left: 4px solid #966378;
+background: #ffffff;
+color: #666666;
+font-size: 14px;
+line-height: 1.6;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+.audience-grid {
+grid-template-columns: 1fr;
+}
+
+```
+.audience-card {
+    padding: 32px 24px;
+}
+```
+
+}
+
