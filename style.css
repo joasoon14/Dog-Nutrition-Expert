@@ -520,3 +520,29 @@ footer p {
     object-fit: contain;
     object-position: center;
 }
+/* Language switch */
+
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 16px;
+    border-left: 1px solid #d8d2ce;
+    color: #777777;
+}
+
+.language-switch a {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.language-switch a:hover {
+    color: #966378;
+}
+
+@media (max-width: 800px) {
+    .language-switch {
+        padding-left: 0;
+        border-left: 0;
+    }
+}
