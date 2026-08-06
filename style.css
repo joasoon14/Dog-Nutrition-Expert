@@ -546,3 +546,32 @@ footer p {
         border-left: 0;
     }
 }
+.brand {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.15;
+}
+
+.brand::after {
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    opacity: 0.7;
+}
+
+/* Ingliskeelsed lehed */
+html[lang="en"] .brand::after {
+    content: "Kerit-Lii Joasoon, MSc";
+}
+
+/* Saksakeelsed lehed */
+html[lang="de"] .brand::after {
+    content: "Kerit-Lii Joasoon, MSc";
+}
+
+/* Eestikeelsed lehed */
+html[lang="et"] .brand::after {
+    content: "Kerit-Lii Joasoon, Mag";
+}
