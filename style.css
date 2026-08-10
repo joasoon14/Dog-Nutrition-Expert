@@ -575,3 +575,16 @@ html[lang="de"] .brand::after {
 html[lang="et"] .brand::after {
     content: "Kerit-Lii Joasoon, Mag";
 }
+.professional-image {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 0 28px;
+}
+
+.professional-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
