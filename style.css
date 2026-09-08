@@ -458,6 +458,12 @@ footer p {
         font-size: 14px;
     }
 
+     .hero h1 {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+    }
+
     .hero-buttons {
         flex-direction: column;
     }
