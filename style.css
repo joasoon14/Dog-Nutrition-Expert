@@ -573,7 +573,7 @@ html[lang="de"] .brand::after {
 
 /* Eestikeelsed lehed */
 html[lang="et"] .brand::after {
-    content: "Kerit-Lii Joasoon, Mag";
+    content: "Kerit-Lii Joasoon, MSc";
 }
 .professional-image {
     max-width: 900px;
