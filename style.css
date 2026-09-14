@@ -86,7 +86,7 @@ nav a[aria-current="page"] {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -106,6 +106,7 @@ nav a[aria-current="page"] {
     font-size: clamp(42px, 7vw, 70px);
     line-height: 1.05;
     letter-spacing: -2px;
+    text-wrap: balance;
 }
 
 .hero-text {
