@@ -620,3 +620,44 @@ html[lang="et"] .brand::after {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
+/* About introduction */
+
+.about-intro-card {
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+.about-intro-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-intro-text p:first-child {
+    margin-top: 0;
+}
+
+.about-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .about-intro-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-intro-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-intro-image img {
+        height: auto;
+    }
+}
