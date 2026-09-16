@@ -471,7 +471,18 @@ footer p {
     .section-heading h2 {
         font-size: 34px;
     }
+    
+    .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    }
+    
+    .about-story-image {
+        max-width: 360px;
+        margin: 0 auto;
+    }
 }
+
 
 /* Small mobile screens */
 
@@ -557,19 +568,7 @@ footer p {
     }
 }
 
-.story-image {
-    max-width: 360px;
-    margin: 28px auto 32px;
-}
 
-.story-image img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center 35%;
-    display: block;
-    border-radius: 18px;
-}
 /* Homepage portrait image */
 
 .home-hero-image {
@@ -685,5 +684,23 @@ html[lang="et"] .brand::after {
 
     .about-intro-image img {
         height: auto;
+    }
+
+
+    .about-story-grid {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        align-items: center;
+        gap: 48px;
+        margin-top: 28px;
+    }
+    
+    .about-story-image img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 20px;
     }
 }
