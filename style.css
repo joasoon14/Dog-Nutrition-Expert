@@ -759,8 +759,7 @@ html[lang="et"] .brand::after {
 .dog-owner-intro-image img {
     display: block;
     width: 100%;
-    height: 390px;
-    object-fit: cover;
+    height: auto;
     border-radius: 24px;
 }
 
