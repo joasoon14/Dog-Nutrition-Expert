@@ -188,6 +188,18 @@ nav a[aria-current="page"] {
     line-height: 1.75;
 }
 
+.credentials-card ul {
+    margin: 20px 0 24px;
+    padding-left: 22px;
+}
+
+.credentials-card li {
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 8px;
+}
+
 .credentials-card p:last-of-type {
     margin-bottom: 24px;
 }
