@@ -556,6 +556,20 @@ footer p {
         max-width: 240px;
     }
 }
+
+.story-image {
+    max-width: 520px;
+    margin: 28px auto 32px;
+}
+
+.story-image img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+    border-radius: 20px;
+}
 /* Homepage portrait image */
 
 .home-hero-image {
