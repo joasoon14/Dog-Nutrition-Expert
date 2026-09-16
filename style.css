@@ -558,7 +558,7 @@ footer p {
 }
 
 .story-image {
-    max-width: 520px;
+    max-width: 360px;
     margin: 28px auto 32px;
 }
 
@@ -566,9 +566,9 @@ footer p {
     width: 100%;
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: center 40%;
+    object-position: center 35%;
     display: block;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 /* Homepage portrait image */
 
