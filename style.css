@@ -879,3 +879,49 @@ html[lang="et"] .brand::after {
         height: auto;
     }
 }
+
+/* Text consistency fixes */
+
+/* Descriptive text below section headings */
+.section-heading > p:not(.small-heading) {
+    max-width: 720px;
+    margin: 18px auto 0;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Keep small headings consistent inside all card types */
+.service-card .small-heading,
+.audience-card .small-heading,
+.credentials-card .small-heading,
+.contact-card .small-heading {
+    margin: 0 0 14px;
+    color: #966378;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* Credential pills when used inside a content card */
+.credentials-card .hero-credentials {
+    max-width: none;
+    margin: 28px 0 24px;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.credentials-card .hero-credentials li {
+    margin-bottom: 0;
+}
+
+
+/* Links below text inside service cards */
+.service-card .text-link {
+    display: inline-block;
+    margin-top: 18px;
+}
