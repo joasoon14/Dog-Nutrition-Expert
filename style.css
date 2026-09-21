@@ -682,7 +682,6 @@ footer p {
         height: auto;
     }
 }
-}
 
 
 /* Language switch */
@@ -907,13 +906,14 @@ html[lang="et"] .brand::after {
 .audience-card .small-heading,
 .credentials-card .small-heading,
 .contact-card .small-heading {
-    margin: 0 0 14px;
+    margin: 0 auto 14px;
     color: #966378;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
