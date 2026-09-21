@@ -999,3 +999,23 @@ html[lang="et"] .brand::after {
         margin: 0 auto;
     }
 }
+
+.testimonial-card {
+    text-align: center;
+}
+
+.testimonial-card blockquote {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    color: #444444;
+    font-size: 20px;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+}
