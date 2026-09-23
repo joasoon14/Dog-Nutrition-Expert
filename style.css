@@ -1026,3 +1026,10 @@ html[lang="et"] .brand::after {
     font-size: 13px;
     font-style: italic;
 }
+
+.image-credit {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+}
