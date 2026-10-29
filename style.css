@@ -801,7 +801,7 @@ html[lang="et"] .brand::after {
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(0, 1fr) 320px;
-    align-items: stretch;
+    align-items: center;
     gap: 32px;
 }
 
@@ -828,21 +828,24 @@ html[lang="et"] .brand::after {
     margin-bottom: 0;
 }
 
-dog-owner-intro-image {
-    position: relative;
+.dog-owner-intro-image {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     min-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .dog-owner-intro-image img {
-    position: absolute;
-    inset: 0;
+    position: static;
     display: block;
     width: 100%;
-    height: 100%;
-    max-height: none;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 24px;
+    height: auto;
+    max-height: 340px;
+    object-fit: contain;
+    border-radius: 20px;
 }
 
 @media (max-width: 800px) {
