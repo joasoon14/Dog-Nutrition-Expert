@@ -800,7 +800,7 @@ html[lang="et"] .brand::after {
     max-width: 950px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 250px;
+    grid-template-columns: minmax(0, 1fr) 320px;
     align-items: center;
     gap: 32px;
 }
@@ -833,7 +833,7 @@ html[lang="et"] .brand::after {
     width: auto;
     max-width: 100%;
     height: auto;
-    max-height: 280px;
+    max-height: 340px;
     object-fit: contain;
     border-radius: 20px;
     margin: 0 auto;
@@ -854,7 +854,7 @@ html[lang="et"] .brand::after {
     }
 
     .dog-owner-intro-image {
-        max-width: 230px;
+        max-width: 280px;
         margin: 0 auto;
     }
 
