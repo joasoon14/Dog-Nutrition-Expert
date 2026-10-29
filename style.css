@@ -1033,3 +1033,45 @@ html[lang="et"] .brand::after {
     color: #777;
     text-align: center;
 }
+
+/* CONTACT PAGE - smaller hero section */
+
+.hero.home-hero.contact-hero {
+    min-height: 0;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact-hero .home-hero-grid {
+    min-height: 0;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Smaller image */
+.contact-hero .home-hero-image {
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+}
+
+.contact-hero .home-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .hero.home-hero.contact-hero {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .contact-hero .home-hero-image {
+        max-width: 240px;
+    }
+}
