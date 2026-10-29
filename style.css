@@ -1032,23 +1032,6 @@ html[lang="et"] .brand::after {
     text-align: center;
 }
 
-/* Business hero image - only its photograph size differs */
-
-.home-hero:not(.contact-hero) .home-hero-image img {
-    width: 100%;
-    height: 320px;
-    max-height: none;
-    object-fit: cover;
-    object-position: center;
-}
-/* Tablet and mobile */
-
-@media (max-width: 800px) {
-    .home-hero:not(.contact-hero) .home-hero-image img {
-        height: 280px;
-    }
-}
-
 /* Contact hero: same typography, slightly smaller portrait photo */
 .contact-hero .home-hero-image {
     max-width: 260px;
