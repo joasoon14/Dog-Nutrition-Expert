@@ -1099,3 +1099,53 @@ html[lang="et"] .brand::after {
     }
 }
 
+
+/* =====================================
+   UNIFIED HERO SIZE - ALL PAGES
+   ===================================== */
+
+.hero,
+.hero.home-hero,
+.hero.business-hero,
+.hero.home-hero.contact-hero {
+    height: 520px;
+    min-height: 0;
+    padding: 30px 28px;
+    display: flex;
+    align-items: center;
+}
+
+/* Keep the content centered inside the hero */
+.hero > .hero-content,
+.hero > .home-hero-grid {
+    width: 100%;
+}
+
+/* Limit homepage image height */
+.hero.home-hero:not(.contact-hero) .home-hero-image img {
+    max-height: 320px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Contact image */
+.contact-hero .home-hero-image img {
+    max-height: 260px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tablet and mobile */
+@media (max-width: 1000px) {
+
+    .hero,
+    .hero.home-hero,
+    .hero.business-hero,
+    .hero.home-hero.contact-hero {
+        height: auto;
+        min-height: 0;
+        padding: 35px 22px;
+    }
+
+}
+
