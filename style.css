@@ -830,13 +830,12 @@ html[lang="et"] .brand::after {
 
 .dog-owner-intro-image img {
     display: block;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 340px;
-    object-fit: contain;
+    width: 100%;
+    height: 330px;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
     border-radius: 20px;
-    margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -854,12 +853,16 @@ html[lang="et"] .brand::after {
     }
 
     .dog-owner-intro-image {
-        max-width: 280px;
+        width: 280px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
     .dog-owner-intro-image img {
-        height: auto;
+        width: 100%;
+        height: 300px;
+        max-height: none;
+        object-fit: cover;
     }
 }
 
