@@ -1069,3 +1069,11 @@ html[lang="et"] .brand::after {
         font-size: clamp(30px, 7vw, 38px);
     }
 }
+/* Business hero image */
+
+.business-hero .home-hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+}
