@@ -797,13 +797,14 @@ html[lang="et"] .brand::after {
 /* Dog owner introduction */
 
 .dog-owner-intro {
-    max-width: 1050px;
+    max-width: 950px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 1fr) 250px;
     align-items: center;
-    gap: 48px;
+    gap: 32px;
 }
+
 
 .dog-owner-intro-text {
     padding: 48px;
@@ -829,9 +830,13 @@ html[lang="et"] .brand::after {
 
 .dog-owner-intro-image img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    border-radius: 24px;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -849,7 +854,7 @@ html[lang="et"] .brand::after {
     }
 
     .dog-owner-intro-image {
-        max-width: 500px;
+        max-width: 230px;
         margin: 0 auto;
     }
 
