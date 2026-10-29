@@ -1034,44 +1034,68 @@ html[lang="et"] .brand::after {
     text-align: center;
 }
 
-/* CONTACT PAGE - smaller hero section */
+
+/* Contact page - compact hero */
 
 .hero.home-hero.contact-hero {
     min-height: 0;
     height: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 24px 28px;
 }
 
+/* Text and image layout */
 .contact-hero .home-hero-grid {
-    min-height: 0;
+    max-width: 1000px;
+    grid-template-columns: minmax(0, 1fr) 240px;
     align-items: center;
-    gap: 32px;
+    gap: 36px;
 }
 
-/* Smaller image */
+/* Smaller heading */
+.contact-hero h1 {
+    font-size: clamp(36px, 4.2vw, 52px);
+    line-height: 1.1;
+}
+
+/* More compact description */
+.contact-hero .hero-text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+/* Smaller image without cropping */
 .contact-hero .home-hero-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 240px;
     justify-self: center;
 }
 
 .contact-hero .home-hero-image img {
     display: block;
     width: 100%;
-    height: auto;
-    max-height: 320px;
+    height: 260px;
+    max-height: none;
     object-fit: contain;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
+/* Tablet and mobile */
+@media (max-width: 800px) {
     .hero.home-hero.contact-hero {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding: 24px 22px;
+    }
+
+    .contact-hero .home-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .contact-hero .home-hero-image {
-        max-width: 240px;
+        max-width: 220px;
+    }
+
+    .contact-hero .home-hero-image img {
+        height: 240px;
     }
 }
+
