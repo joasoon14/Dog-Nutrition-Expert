@@ -1037,3 +1037,11 @@ html[lang="et"] .brand::after {
         grid-template-columns: 1fr;
     }
 }
+.consultation-note {
+    max-width: 800px;
+    margin: 28px auto 0;
+    text-align: center;
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.6;
+}
