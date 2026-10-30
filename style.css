@@ -608,7 +608,7 @@ footer p {
 .home-hero-image img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 340;
     object-fit: contain;
     object-position: center;
     border-radius: 24px;
@@ -648,7 +648,7 @@ footer p {
 
     .business-hero-image img {
         width: 100%;
-        height: auto;
+        height: 340;
     }
 }
 
