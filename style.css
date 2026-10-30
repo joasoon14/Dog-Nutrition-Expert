@@ -1065,5 +1065,19 @@ html[lang="et"] .brand::after {
     font-size: 17px;
     line-height: 1.6;
 }
+/* Rounded corners for the three Hero images */
+
+.home-hero .home-hero-image,
+.business-hero .home-hero-image,
+.contact-hero .home-hero-image {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.home-hero .home-hero-image img,
+.business-hero .home-hero-image img,
+.contact-hero .home-hero-image img {
+    border-radius: 24px;
+}
 
 
