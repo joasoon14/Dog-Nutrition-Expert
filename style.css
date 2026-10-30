@@ -1066,13 +1066,4 @@ html[lang="et"] .brand::after {
     line-height: 1.6;
 }
 
-/* For Businesses hero photo – shorter height */
-
-.business-hero .home-hero-image img {
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: none;
-}
 
